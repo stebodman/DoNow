@@ -989,6 +989,30 @@ body {
   .topbar, .toolbar { padding-left: 16px; padding-right: 16px; }
   .tool-spacer { display: none; }
 }
+
+/* ---- Compact vertical sizing (avoid page scroll on laptop screens) ---- */
+.topbar { padding: 8px 28px 6px; }
+.brand-bar { height: 30px; }
+.app-title { font-size: 1.35rem; }
+.app-sub { margin-top: 1px; }
+.gen-btn { padding: 8px 24px; }
+.fs-btn { padding: 7px 16px; }
+.toolbar { padding: 7px 28px 9px; gap: 8px 22px; }
+.tool-group { gap: 3px; }
+.hdr-select, #date-select, #year-group-select { padding-top: 6px; padding-bottom: 6px; }
+.print-btn, .dl-btn, .blank-btn { padding: 6px 14px; }
+.main { padding: 14px 28px 14px; gap: 22px; }
+.col-header, .col-header.recap, .col-header.prior { padding: 10px 20px 10px; gap: 7px; }
+.col-header select { padding-top: 6px; padding-bottom: 6px; }
+.q-boxes { padding: 12px 20px 14px; gap: 10px; }
+.q-box { min-height: 66px; padding: 10px 50px 10px 16px; line-height: 1.5; }
+.q-box .q-num { height: 28px; min-width: 30px; }
+.q-box .q-text { padding-top: 1px; }
+.q-refresh { top: 9px; right: 10px; width: 28px; height: 28px; }
+@media (max-height: 720px) {
+  .main { padding-top: 10px; padding-bottom: 8px; }
+  .q-box { min-height: 58px; padding-top: 8px; padding-bottom: 8px; }
+}
 </style>
 </head>
 <body>
